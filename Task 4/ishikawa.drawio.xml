@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Codex">
   <diagram id="ishikawa-migration" name="Ishikawa - узкие места миграции">
-    <mxGraphModel dx="2760" dy="1585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+    <mxGraphModel dx="2103" dy="1208" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -81,6 +81,9 @@
         </mxCell>
         <mxCell id="effect" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontSize=16;align=center;verticalAlign=middle;spacing=14;" value="&lt;b&gt;Следствие&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;- срыв запуска или нестабильная работа&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- потеря либо рассогласование данных&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- недоступность записи&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- раскрытие медицинских сведений&lt;/div&gt;" vertex="1">
           <mxGeometry height="185" width="400" x="1538" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="RlRvjSQtcDksExYdNb9R-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;arcSize=0;" value="&lt;div&gt;&lt;b&gt;Меры устранения рисков&amp;nbsp; миграции:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;1. Обследование: инвентаризация, карта потоков данных/зависимостей, объемы и скорость изменения данных, нагрузка&lt;/div&gt;&lt;div&gt;2. Подготовка: доменные границы, целевые схемы, контракты данных и API, правила миграции, критерии сверки и отката&lt;/div&gt;&lt;div&gt;3. MVP: регистрация/запись в MVP для ограниченной группы в существующем офисе, наблюдение, сверка и исправление выявленных причин.&lt;/div&gt;&lt;div&gt;4. Поэтапное расширение: развитие MVP и аналитического флоу&lt;/div&gt;&lt;div&gt;5. Масштабирование и вывод legacy: нагрузочная проверка для филиалов и роста, завершение миграции, контроль временных копий и только затем отключение legacy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="687" x="63" y="980" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
