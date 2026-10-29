@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="02-schedule" name="02-schedule">
+    <mxGraphModel dx="1967" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=22;fontColor=#000000;" value="&lt;b&gt;Запись пациента на прием&lt;/b&gt;&lt;b&gt;&amp;nbsp;(AS IS)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="1320" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Пациент" vertex="1">
+          <mxGeometry height="90" width="190" x="85" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="reception" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Сотрудник ресепшена" vertex="1">
+          <mxGeometry height="90" width="190" x="85" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DDEEFF;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Зарегистрировать, изменить или найти запись вручную" vertex="1">
+          <mxGeometry height="150" width="250" x="550" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="journal" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Общий диск&lt;br&gt;Excel-журналы по специалистам" vertex="1">
+          <mxGeometry height="110" width="260" x="1085" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Врач" vertex="1">
+          <mxGeometry height="90" width="180" x="1130" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="reception" value="Запрос на приём: выбранный специалист / желаемое время;&amp;nbsp;&lt;div&gt;идентификация пациента&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0909" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="reception" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" value="Ручной ввод и изменение записи">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="schedule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="journal" value="ФИО или иной идентификатор,&amp;nbsp;&lt;div&gt;специалист, дата и время записи&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="journal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="doctor" value="Просмотр и редактирование своего журнала">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="controls_title" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontColor=#000000;" value="&lt;b&gt;Предлагаемые меры защиты&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="480" x="70" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=13;align=left;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Минимизация расписания&lt;/b&gt;&lt;br&gt;- использовать внутренний идентификатор пациента&lt;div&gt;- не помещать в расписание диагнозы и подробности обращения&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Доступ по роли и контексту&lt;/b&gt;&lt;br&gt;- ресепшен видит необходимые записи&lt;/div&gt;&lt;div&gt;- специалист получает записи своего расписания&lt;/div&gt;&lt;div&gt;- ограничивать доступ филиалом и рабочей необходимостью&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Контроль действий&lt;/b&gt;&lt;br&gt;- логировать создание, просмотр, изменение и отмену записи&lt;/div&gt;&lt;div&gt;- уведомления отправлять без чувствительных медицинских сведений.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="520" x="70" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

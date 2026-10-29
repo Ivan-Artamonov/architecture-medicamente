@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="ishikawa-migration" name="ishikawa-migration">
+    <mxGraphModel dx="2103" dy="1208" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="spine" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#34495E;strokeWidth=5;startArrow=none;endArrow=block;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="78" y="535" as="sourcePoint" />
+            <mxPoint x="1538" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone1" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="283" y="340" as="sourcePoint" />
+            <mxPoint x="413" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone2" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="743" y="340" as="sourcePoint" />
+            <mxPoint x="803" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone3" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1218" y="340" as="sourcePoint" />
+            <mxPoint x="1198" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone4" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="750" as="sourcePoint" />
+            <mxPoint x="353" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone5" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="563" y="750" as="sourcePoint" />
+            <mxPoint x="683" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone6" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="903" y="750" as="sourcePoint" />
+            <mxPoint x="1013" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bone7" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#71808D;strokeWidth=3;startArrow=none;endArrow=none;endFill=1;fontColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1258" y="750" as="sourcePoint" />
+            <mxPoint x="1368" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=23;fontColor=#000000;" value="&lt;b&gt;Потенциальные узкие места миграции&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="1880" x="50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=15;fontColor=#000000;" value="Переход от разрозненных решений к порталам, CRM, API лаборатории и аналитическим приложения" vertex="1">
+          <mxGeometry height="40" width="1880" x="50" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="infra" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Инфраструктура&lt;/b&gt;&lt;br&gt;&lt;br&gt;- Один физический сервер в офисе - единая точка отказа&lt;br&gt;- Ожидаемый 5х рост данных и новые филиалы требуют отказоустойчивых инфраструктурных решений в геораспределенных ДЦ" vertex="1">
+          <mxGeometry height="150" width="400" x="83" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="software" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Программное обеспечение&lt;/b&gt;&lt;br&gt;&lt;br&gt;- Разные модели: монолиты, общие ресурсы, 1С в файловом режиме&lt;br&gt;- Бизнес-правила и расчеты частично скрыты в Excel и ручных действиях&lt;br&gt;- Новые сервисы добавляют версии, распределенные транзакции и сложность сопровождения" vertex="1">
+          <mxGeometry height="150" width="400" x="543" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="integration" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Интеграции&lt;/b&gt;&lt;br&gt;&lt;br&gt;- 1С:Бухгалтерия связана с ККМ&amp;nbsp;&lt;div&gt;- 1С использует файловый режим и обмен с бухгалтерией&lt;br&gt;- Контракт и канал API лаборатории не определен&lt;br&gt;- Миграции, согласованность и совместная работа старого/нового контура не описаны&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="430" x="1003" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Данные&lt;/b&gt;&lt;br&gt;&lt;br&gt;- excel, JPG, PDF и сканы не имеют единой схемы&lt;br&gt;- дубли, ошибки идентификаторов и пропуски могут перейти в CRM и Data Lake&lt;br&gt;- Медицинские и персональные данные требуют классификации, контролируемого переноса" vertex="1">
+          <mxGeometry height="180" width="320" x="63" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="people" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Персонал&lt;/b&gt;&lt;br&gt;&lt;br&gt;- IT-отдел состоит из трех специалистов: высокий bus factor&lt;br&gt;- рост команды и филиалов потребует обучения пользователей и поддержки новых сервисов&lt;br&gt;- аналитика переходит из excel к новым инструментам" vertex="1">
+          <mxGeometry height="180" width="320" x="403" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="process" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Процессы&lt;/b&gt;&lt;br&gt;&lt;br&gt;- регистрация, запись и работа с файлами во многом ручные&lt;div&gt;- целевые правила и границы сервисов не зафиксированы&lt;br&gt;- сжатые этапы разработки могут сократить время на проверку&lt;br&gt;- план переключения, сверки данных и отката не описан&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="320" x="743" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="security" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Безопасность&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;- не описано логирование и методика ограничений доступа&lt;br&gt;- во время миграции/параллельной работы могут появиться лишние копии чувствительных данных&lt;br&gt;- логирование, мониторинг и алерты нужно включить до переключения&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="350" x="1083" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="effect" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontSize=16;align=center;verticalAlign=middle;spacing=14;" value="&lt;b&gt;Следствие&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;- срыв запуска или нестабильная работа&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- потеря либо рассогласование данных&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- недоступность записи&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- раскрытие медицинских сведений&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="400" x="1538" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="RlRvjSQtcDksExYdNb9R-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#233746;fontSize=13;align=left;verticalAlign=top;spacing=12;arcSize=0;" value="&lt;div&gt;&lt;b&gt;Меры устранения рисков&amp;nbsp; миграции:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;1. Обследование: инвентаризация, карта потоков данных/зависимостей, объемы и скорость изменения данных, нагрузка&lt;/div&gt;&lt;div&gt;2. Подготовка: доменные границы, целевые схемы, контракты данных и API, правила миграции, критерии сверки и отката&lt;/div&gt;&lt;div&gt;3. MVP: регистрация/запись в MVP для ограниченной группы в существующем офисе, наблюдение, сверка и исправление выявленных причин.&lt;/div&gt;&lt;div&gt;4. Поэтапное расширение: развитие MVP и аналитического флоу&lt;/div&gt;&lt;div&gt;5. Масштабирование и вывод legacy: нагрузочная проверка для филиалов и роста, завершение миграции, контроль временных копий и только затем отключение legacy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="687" x="63" y="980" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

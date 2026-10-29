@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="03-visit" name="03-visit">
+    <mxGraphModel dx="1635" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=22;fontColor=#000000;" value="&lt;b&gt;Медицинский прием и ведение медицинских материалов (AS IS)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="750" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Пациент" vertex="1">
+          <mxGeometry height="90" width="190" x="90" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Врач" vertex="1">
+          <mxGeometry height="100" width="210" x="90" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="care" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DDEEFF;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Опросить, провести приём, зафиксировать сведения и результат" vertex="1">
+          <mxGeometry height="150" width="250" x="650" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="records" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Общий диск&lt;br&gt;Медицинские карты, Excel, JPG/PDF" vertex="1">
+          <mxGeometry height="150" width="290" x="1040" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="doctor" value="Жалобы, анамнез и иные сведения о здоровье">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="doctor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="care" value="Осмотр и обработка медицинских данных">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=default;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="care" value="Чтение раних данных">
+          <mxGeometry relative="1" x="0.6438" y="-15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="care" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#000000;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" target="records" value="Медицинская запись, заключение и приложенные файлы">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="controls_title" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontColor=#000000;" value="&lt;b&gt;Предлагаемые меры защиты&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="365" x="90" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#000000;fontColor=#000000;fontSize=13;align=left;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Разделение медицинских данных&lt;/b&gt;&lt;br&gt;- маркировать как HEALTH&lt;div&gt;- хранить отдельно от общих анкет и журналов&lt;/div&gt;&lt;div&gt;- минимизировать копии, выгрузки и сканы.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Доступ специалиста&lt;/b&gt;&lt;br&gt;- Предоставлять доступ врачу по связи с пациентом и текущему приему&lt;/div&gt;&lt;div&gt;- ресепшену не показывать медицинское содержание&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Защита и наблюдаемость&lt;/b&gt;&lt;br&gt;- шифровать хранилище и резервные копии&lt;/div&gt;&lt;div&gt;- вести логи чтения/изменения без записи мед.данных и ПД в логи&lt;/div&gt;&lt;div&gt;- контролировать массовые выгрузки&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="500" x="90" y="488" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
